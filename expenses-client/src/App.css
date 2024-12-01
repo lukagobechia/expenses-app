@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.expense-tracker {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.add-expense, .total-expenses, .expenses-list {
+  background-color: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.add-button {
+  width: 100%;
+}
+
+.total-expenses p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #27ae60;
+}
+
+.sort-control {
+  margin-bottom: 1rem;
+}
+
+.sort-control select {
+  width: 100%;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.expense-details p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.expense-amount {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expense-amount p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+.edit-button {
+  background-color: #27ae60;
+}
+.cancel-button{
+  background-color: #e74c3c;
+
+  margin: 10px 0 0 0;
+}
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .expense-tracker {
+    padding: 1rem;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-amount {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
